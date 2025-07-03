@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET Page</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<style>
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .slider-track {
+        display: flex;
+        width: max-content;
+        animation: scrollLeft 20s linear infinite;
+    }
+
+    .slider-track img {
+        width: 130px;
+        height: 120px;
+        object-fit: cover;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="bg-white  p-5 flex items-center lg:justify-around lg:gap-20 justify-between">
+            <div class=" flex items-center"><img src="/build/assests/img/Group.svg" alt=""> <img
+                    class="w-[190px] md:w-[210px]" src="/build/assests/img/logo.png" alt=""></div>
+
+            <!-- Hamburger Icon -->
+
+
+            <!-- Menu List -->
+            <ul id="menu" class="hidden lg:flex space-x-6 font-medium">
+                <li><a href="#" class="hover:text-blue-500 2xl:text-xl">Home +</a></li>
+                <li><a href="#" class="hover:text-blue-500 2xl:text-xl">About Us +</a></li>
+                <li><a href="#" class="hover:text-blue-500 2xl:text-xl">Features +</a></li>
+                <li><a href="#" class="hover:text-blue-500 2xl:text-xl">Pricing +</a></li>
+
+            </ul>
+
+            <div class="flex gap-3">
+                <button
+                    class="border-[1px] w-[170px] rounded-full hidden lg:block border-gray-700 p-2 font-semibold">Contact
+                    Us Now</button>
+
+                <button id="menu-toggle" class="lg:hidden text-3xl focus:outline-none">
+                    &#9776; <!-- Hamburger Icon -->
+                </button>
+            </div>
+
+        </nav>
+
+        <!-- Mobile Menu List -->
+        <ul id="mobile-menu"
+            class="hidden 2xl:text-xl  flex-col justify-center items-center space-y-2 bg-white p-4 font-medium">
+            <div class="mx-3">
+                <li><a href="#" class="hover:text-blue-500 ">About Us</a></li>
+                <li><a href="#" class="hover:text-blue-500 ">Services</a></li>
+                <li><a href="#" class="hover:text-blue-500 ">Pricing</a></li>
+                <li><a href="#" class="hover:text-blue-500 ">More</a></li>
+            </div>
+            <button class="border-[1px] w-[170px] rounded-full  border-gray-700 p-2 font-semibold">Contact Us
+                Now</button>
+        </ul>
+    </header>
+
+
+    <!-- REVOLUTIONIZING section  -->
+
+
+    <section>
+        <div class="p-2 2xl:px-[100px] lg:grid lg:grid-cols-2">
+            <!-- left area  -->
+            <div class="my-11 lg:p-[40px] 2xl:w-1/2  ">
+                <div class="">
+                    <div class="lg:w-[40vw] md:w-[99vw] xl:w-[30vw] ">
+                        <h1
+                            class="text-center md:text-center xl:text-start sm:text-4xl lg:text-5xl xl:text-6xl uppercase text-2xl sm:mt-7 font-extralight 2xl:text-[80px]">
+                            REVOLUTIONIZING <span class="text-[#EE6776]">PET
+                                CARE</span> <span class="lg:inline items-center flex justify-center  gap-2">With
+                                think pet <img class="w-14 lg:inline lg:w-20" src="/build/assests/img/pet-blue-bg.png"
+                                    alt=""> </span>
+                        </h1>
+                        <p
+                            class=" xl:text-[20px] md:text-center lg:text-start text-gray-700 my-3 text-center 2xl:text-xl">
+                            Empowering Pet Owners with
+                            Intelligent Insights and Comprehensive
+                            Health Monitoring</p>
+                    </div>
+                    <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                        <button
+                            class="w-[220px] mt-3 gap-2 justify-center rounded-full font-semibold  flex items-center  p-1 h-[50px] text-white bg-[#EA305A]">Book
+                            And Schedule<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    src="/build/assests/img/foot-cat.png" alt=""></span> </button>
+                    </div>
+                    <div
+                        class="absolute md:bottom-14 lg:top-[110px]  top-[60px] left-[55px] xl:h-[550px] sm:h-[350px] sm:w-[520px] flex justify-center md:justify-center lg:w-[55vw] lg:left-[1px] md:left-[160px] ">
+                        <img class="w-[95vw] xl:w-[40vw] md:w-[60vw] lg:w-[50vw]  "
+                            src="/build/assests/img/rectangle.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- right area  -->
+
+            <div class="my-20 p-2 flex justify-center  ">
+                <div class="relative">
+                    <div class="w-[280px] md:w-[366px] 2xl:w-[470px]">
+                        <img src="/build/assests/img/Rectangle-cage.png" alt="">
+                    </div>
+                    <div class="absolute w-[290px] md:w-[396px] 2xl:w-[519px] top-[47px] justify-center flex ">
+
+                        <img class="" src="/build/assests/img/pet-2.png" alt="">
+
+                    </div>
+                    <div class="absolute top-0 translate-y-6 translate-x-[-50px]">
+                        <img class="w-[120px] md:w-[150px] 2xl:w-[180px]" src="/build/assests/img/bone.png" alt="">
+                    </div>
+                    <div
+                        class="flex justify-center left-[240px] 2xl:left-[420px]  md:left-[330px] absolute bottom-[90px] items-center w-[60px] md:w-[80px] md:h-[80px] h-[60px] rounded-full 2xl:w-[110px] 2xl:h-[110px]
+                         bg-[#EA305A]">
+                        <img class="2xl:w-[33px]" src="/build/assests/img/foot-cat.png" alt="">
+                    </div>
+                    <div
+                        class="absolute top-[310px] md:w-[180px] xl:w-[220px] md:top-[399px] translate-x-[-33px] md:translate-x-[-88px] 2xl:w-[280px] 2xl:top-[500px] w-[130px]">
+                        <img class="" src="/build/assests/img/ticket.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider section  -->
+    <section>
+        <div>
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-1.png" alt="img1">
+
+
+                    <!-- Duplicate images for seamless loop -->
+                    <img class="" src="/build/assests/img/my-2.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img2">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img3">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img4">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img5">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img6">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img7">
+                    <img src="/build/assests/img/my-2.png" alt="img5">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img1">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img2">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img3">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img4">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img5">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img6">
+                    <img class="" src="/build/assests/img/my-2.png" alt="img7">
+                    <img src="/build/assests/img/my-2.png" alt="img5">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="flex">
+
+
+
+
+    </section>
+
+    <!-- Why Choose Section  -->
+    <section>
+        <div class="p-5 2xl:py-12 2xl:mt-16">
+            <div class="">
+                <h1 class="text-3xl md:text-4xl 2xl:text-[88px]  text-center">Why Choose <span
+                        class="text-[#F1728F]">Think Pet</span></h1>
+                <p class="text-center mt-3 2xl:pt-14 2xl:text-xl">Whether it's the playful antics of a dog, the soothing
+                    purr of a cat, or the
+                    fascinating behaviors of a bird or fish, each type of pet has its own unique way of connecting with
+                    us.</p>
+                <p class=" text-center 2xl:text-xl">Think Pets Wether its play ful antics for dog or a cat or dog of a
+                    bird or
+                    fish </p>
+            </div>
+            <!-- left area  -->
+            <div class="lg:grid lg:grid-cols-2 p-8">
+                <div class="lg:ml-14">
+                    <div>
+                        <div class="w-[77px] mt-14 relative h-[77px] rounded-full bg-[#FFCDD8]">
+                            <img class="w-[50px] translate-x-[-10px] absolute top-[20px]"
+                                src="/build/assests/img/image tv.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl 2xl:text-4xl">Real-Time Health Monitoring</h1>
+                        <p class="mt-2 2xl:text-xl">Real Time Health Monitoring And Real Time Heaith Monitoring Health Monitoring
+                        </p>
+                    </div>
+                    <!-- two  -->
+                    <div>
+                        <div class="w-[77px] mt-14 relative h-[77px] rounded-full bg-[#FFCDD8]">
+                            <img class="w-[66px] translate-x-[-10px] absolute top-[20px]"
+                                src="/build/assests/img/secure.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl 2xl:text-4xl">Real-Time Health Monitoring</h1>
+                        <p class="mt-2 2xl:text-xl">Real Time Health Monitoring And Real Time Heaith Monitoring Health Monitoring
+                        </p>
+                    </div>
+                    <!-- three  -->
+                    <div>
+                        <div class="w-[77px] mt-14 relative h-[77px] rounded-full bg-[#FFCDD8]">
+                            <img class="w-[66px] translate-x-[-10px] absolute top-[20px]"
+                                src="/build/assests/img/virus.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl 2xl:text-4xl">Real-Time Health Monitoring</h1>
+                        <p class="mt-2 2xl:text-xl">Real Time Health Monitoring And Real Time Heaith Monitoring Health Monitoring
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- right area  -->
+
+                <div class="mt-6 md:flex md:justify-center lg:justify-around">
+                    <img class="md:w-[500px] lg:w-[500px] lg:h-[500px] 2xl:w-[670px] 2xl:h-[630px]"
+                        src="/build/assests/img/dogs.png" alt="">
+                </div>
+            </div>
+
+            <div class="md:flex lg:justify-between md:gap-[10px] md:p-4">
+                <div class=" flex justify-center mt-6 ml-16">
+                    <img class="w-[210px] md:w-[190px] xl:w-[180px] 2xl:w-[200px]" src="/build/assests/img/img.png"
+                        alt="">
+                </div>
+
+                <div class="flex justify-center  lg:w-[400px] 2xl:w-[620px] items-center mt-3 text-center">
+                    <h1 class="font-bold text-xl 2xl:text-3xl">Join The Think Pet Comunity And Unlock
+                        Intelligent Pet Care</h1>
+
+                </div>
+
+                <div class="flex justify-center md:justify-end mt-5">
+                    <img class="w-[160px] md:w-[120px] 2xl:w-[200px]" src="/build/assests/img/imgs-dogs.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- slider section  -->
+    <section>
+        <div>
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+
+
+
+                    <!-- Duplicate images for seamless loop -->
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img2">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img3">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img4">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img5">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img6">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img7">
+
+                    <img src="/build/assests/img/bones-1.png" alt="img5">
+                    <!-- Duplicate images for seamless loop -->
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img1">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img2">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img3">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img4">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img5">
+                    <img class="" src="/build/assests/img/bones-2.png" alt="img6">
+                    <img class="" src="/build/assests/img/bones-1.png" alt="img7">
+
+                    <img src="/build/assests/img/bones-1.png" alt="img5">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- well groomed section  -->
+    <section>
+        <div class=" lg:px-9 mt-20 mb-5 text-center lg:text-start items-center lg:flex lg:justify-between">
+            <div class="mt-7 pl-8">
+                <h1 class="text-3xl md:text-4xl font-bold">Well Groomed Pet <span
+                        class="text-[#feb6c5]">Collection</span></h1>
+            </div>
+            <div class="mt-4 xl:w-[230px]">
+                <p class="2xl:text-xl">We Have Huge Collection Of
+                    Cosmetic Animal</p>
+            </div>
+            <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                <button
+                    class="w-[220px] mt-3 gap-2 justify-center rounded-full font-semibold  flex items-center border-[1px] border-gray-600  p-1 h-[50px] text-black ">Book
+                    And Schedule<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                            src="/build/assests/img/black paw.png" alt=""></span> </button>
+            </div>
+
+        </div>
+
+        <div class="md:grid md:grid-cols-2 xl:p-14 lg:grid-cols-3 ">
+            <div class="mt-5 m-2">
+                <img src="/build/assests/img/DOG IMGS.png" alt="">
+
+            </div>
+            <div class="mt-5 m-2">
+                <img src="/build/assests/img/PARROT IMG.png" alt="">
+
+            </div>
+            <div class="mt-5 m-2">
+                <img src="/build/assests/img/CAT IMG.png" alt="">
+
+            </div>
+        </div>
+
+        <div>
+            <img src="/build/assests/img/group-paw.png" alt="">
+        </div>
+    </section>
+
+    <!-- the best food section  -->
+
+    <section>
+        <div class="lg:grid lg:grid-cols-2 mt-5 lg:p-7">
+            <!-- left area  -->
+            <div class=" flex justify-center lg:justify-start lg:px-8 ">
+
+                <img class="2xl:w-[561px] md:w-[420px] " src="/build/assests/img/frame-1.png" alt="">
+
+
+                <!-- <div class="relative">
+                    <div class="">
+                        <img class="w-[280px]" src="/build/assests/img/Rectangle 15.png" alt="">
+                      
+                    </div>
+                    <div class="absolute top-2">
+                        <img class="w-[280px]" src="/build/assests/img/girl-pets.png" alt="">
+                    </div>
+                    <div class="absolute top-0">
+                        <img class="w-[132px] translate-x-[-55px] translate-y-[33px]" src="/build/assests/img/bone.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex justify-center left-[225px] top-[290px]  absolute  items-center w-[70px] md:w-[80px] md:h-[80px] h-[70px] rounded-full bg-[#35C1FC]">
+                        <img src="/build/assests/img/foot-cat.png" alt="">
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- right area  -->
+            <div class="p-4  ">
+                <div class="text-center lg:text-start">
+                    <h1 class="text-3xl sm:text-4xl tracking-widest lg:text-5xl  mt-4 2xl:text-[100px]">The Best Food
+                        <br> For Your</h1>
+                    <br>
+
+                    <span class="text-[#EE6776] tracking-widest sm:text-4xl text-3xl 2xl:text-[100px]">Furry
+                        Friend</span>
+                    <p class="mt-3 sm:text-sm 2xl:text-xl 2xl:py-[20px]">TO Provide With APet Your Balance And Healthy
+                        LKife. To Provide A Pet Your Healthy
+                        Life</p>
+                    <p class="sm:text-sm 2xl:text-xl">TO Provide With APet Your Balance And Healthy LKife. To Provide A
+                        Pet Your Healte</p>
+
+                    <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                        <button
+                            class="w-[180px] mt-3 gap-2 justify-center rounded-full font-semibold  flex items-center border-[1px] border-gray-600  p-1 h-[50px] text-black ">Order
+                            Now<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    class="w-[22px]" src="/build/assests/img/book.png" alt=""></span> </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" flex justify-end h-[140px]">
+            <img class="w-[230px]" src="/build/assests/img/pawss.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- how we serve section  -->
+
+    <section class="2xl:pl-[100px] ">
+        <div class="  lg:grid lg:grid-cols-2">
+            <!-- left area  -->
+            <div class="md:p-8">
+
+                <div class="text-center md:text-start">
+                    <div class="p-4">
+                        <h1
+                            class="uppercase leading-10 text-2xl xl:mt-20 md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[60px] 2xl:tracking-widest ">
+                            how we serve our <br>
+                        <span
+                            class="uppercase 2xl:tracking-widest  text-2xl md:text-3xl lg:text-4xl 2xl:text-[60px] text-[#EE6776] 2xl:mt-12">Pet
+                            partners</span>
+                        </h1>
+
+                        <p class="2xl:text-xl mt-2 2xl:mt-3">Making pet care simple and easy for you making . pet care simple
+                            and easy for you
+                            making pet care simple and simple for you making pet care easy and simple and esy for you
+                            making pet care simple and easy and simple foer you making pet care simple and</p>
+                    </div>
+
+                    <!-- points -->
+                    <div class="relative 2xl:mt-11">
+                        <div class="mt-6">
+                            <div class="flex items-center gap-6 mt-5">
+                                <div><img src="/build/assests/img/point.png" alt=""></div>
+                                <div>
+                                    <h1 class="2xl:text-xl">Adoption</h1>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 mt-5">
+                                <div><img src="/build/assests/img/point.png" alt=""></div>
+                                <div>
+                                    <h1 class="2xl:text-xl">Adoption</h1>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 mt-5">
+                                <div><img src="/build/assests/img/point.png" alt=""></div>
+                                <div>
+                                    <h1 class="2xl:text-xl">Adoption</h1>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 mt-4">
+                                <div><img src="/build/assests/img/point.png" alt=""></div>
+                                <div>
+                                    <h1 class="2xl:text-xl">Adoption</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" hidden lg:ml-24 xl:translate-x-14 xl:ml-[177px] xl:translate-y-[79px] lg:block   ">
+                            <img class="w-[290px] 2xl:w-[380px]" src="/build/assests/img/rot-dogs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right area  -->
+
+            <div class="p-3 lg:p-11 mt-16 sm:grid sm:grid-cols-2 lg:grid-cols-1 ">
+                <div class="flex lg:gap-[150px] p-2 mt-4 lg:mt-0 gap-11">
+                    <div><img class="w-[120px] lg:w-[160px]" src="/build/assests/img/BIRDS.png" alt=""></div>
+                    <div class="xl:translate-y-[-80px]">
+                        <img class="w-[120px] lg:w-[160px]" src="/build/assests/img/parrot-2.png" alt="">
+                    </div>
+                </div>
+                <div class="flex mt-6 lg:mt-2 lg:gap-[120px] gap-11">
+                    <div><img class="w-[130px] lg:w-[210px] mt-12" src="/build/assests/img/cati.png" alt=""></div>
+                    <div class="lg:w-[400px]"><img class="w-[180px] lg:w-[400px]"
+                            src="/build/assests/img/ticket cati.png" alt=""></div>
+
+                </div>
+                <div class="mt-4 lg:mt-3 lg:gap-[150px] flex gap-11">
+
+                    <div><img class="w-[120px] lg:w-[155px]" src="/build/assests/img/DOGi.png" alt=""></div>
+                    <div><img class="w-[120px] lg:w-[133px]" src="/build/assests/img/dogi2.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex justify-center 2xl:pt-14">
+            <img class="lg:w-[499px] 2xl:w-[570px]" src="/build/assests/img/pngwing.com (4) 1.png" alt="">
+        </div>
+
+
+    </section>
+    <!-- count-numbers  -->
+     
+    <section class="">
+        <div class="flex justify-around mb-7 pb-24 border-b-2 border-gray-500  gap-8 mt-12">
+            <div class="counter-block">
+                <div class="label text-sm text-gray-500 lg:text-lg text-center font-bold 2xl:text-2xl">PETS MONITORED
+                </div>
+                <div class="counter 2xl:pt-5 font-bold text-[22px] lg:text-[48px] 2xl:text-[88px] flex justify-center"
+                    id="counter1">0</div>
+            </div>
+
+            <div class="counter-block">
+                <div class="label font-bold text-gray-500 text-sm lg:text-lg text-center 2xl:text-2xl">HEALTH ALERT SENT
+                </div>
+                <div class="counter 2xl:pt-5 font-bold text-[22px] lg:text-[48px] 2xl:text-[88px] flex justify-center"
+                    id="counter2">0</div>
+            </div>
+
+            <div class="counter-block">
+                <div class="label text-sm lg:text-lg font-bold text-gray-500 text-center 2xl:text-2xl">CUSTOMER
+                    SATISFACTION</div>
+                <div class="counter 2xl:pt-2 font-bold 2xl:text-[88px] text-[22px] lg:text-[48px] flex justify-center"
+                    id="counter3">0%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Your plane  -->
+
+    <section>
+        <div class="2xl:pt-[55px]">
+            <div class="flex mt-7 justify-center items-center gap-5 2xl:gap-7">
+                <div class="uppercase text-xl">
+                    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl 2xl:tracking-widest">choose your
+                        <span class="text-[#EA305A]">plane</span></h1>
+                </div>
+                <div><img class="w-[44px] 2xl:w-[77px]" src="/build/assests/img/paw-gray.png" alt=""></div>
+            </div>
+            <!-- pricing  -->
+            <div class="mt-16 lg:grid lg:grid-cols-2">
+                <div class="p-11 lg:px-20 xl:px-36">
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="text-xl sm:text-3xl lg:text-4xl uppercase text-[#EA305A]">Basic</h1>
+                    </div>
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="font-bold text-3xl sm:text-4xl">$9.99 <span
+                                class="text-[15px] sm:text-[18px] text-gray-600">/Month</span></h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Real Time Monetring</h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Basic Report</h1>
+                    </div>
+                    <div class="flex items-center mt-9 lg:justify-start justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Email Report</h1>
+                    </div>
+                    <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                        <button
+                            class="w-[210px] mt-3 gap-2  justify-center rounded-full font-semibold  flex items-center border-[1px] border-gray-600  p-1 h-[50px] text-black ">Select
+                            Basic Plane<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    class="w-[22px]" src="/build/assests/img/pencil.png" alt=""></span> </button>
+                    </div>
+                </div>
+                <!-- right area  -->
+                <div class="flex justify-center">
+                    <img class="w-[400px]" src="/build/assests/img/pet-2.png" alt="">
+                </div>
+            </div>
+            <!-- second row  -->
+            <div class="mt-16 flex-col-reverse lg:grid lg:grid-cols-2">
+
+                <!-- right area  -->
+                <div class="flex 2xl:pl-[70px] lg:justify-start lg:px-10 justify-center">
+                    <img class="w-[400px] h-[360px]" src="/build/assests/img/parotee.png" alt="">
+                </div>
+
+                <!-- left  -->
+
+                <div class="p-11 lg:px-28 xl:px-52">
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="text-xl sm:text-3xl uppercase lg:text-4xl text-[#EA305A]">Premiuem</h1>
+                    </div>
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="font-bold text-3xl mt-2 sm:text-4xl">$19.99 <span
+                                class="text-[15px] sm:text-[18px] text-gray-600">/Month</span></h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Real Time Monetring</h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Basic Report</h1>
+                    </div>
+                    <div class="flex items-center mt-9 lg:justify-start justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Email Report</h1>
+                    </div>
+                    <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                        <button
+                            class="w-[210px] mt-3 gap-2  justify-center rounded-full font-semibold  flex items-center border-[1px] bg-[#EA305A]  p-1 h-[50px] text-white  ">Select
+                            Premiuer Plane<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    class="w-[22px]" src="/build/assests/img/paw-whitee.png" alt=""></span> </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third row  -->
+
+            <div class="mt-16 lg:grid lg:grid-cols-2">
+                <div class="p-11 lg:px-20 xl:px-36">
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="text-xl uppercase sm:text-3xl lg:text-4xl text-[#EA305A]">Pro</h1>
+                    </div>
+                    <div class="flex justify-center lg:justify-start">
+                        <h1 class="font-bold text-3xl sm:text-4xl">$29.99 <span
+                                class="text-[15px] sm:text-[18px] text-gray-600">/Month</span></h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Real Time Monetring</h1>
+                    </div>
+                    <div class="flex items-center lg:justify-start mt-9 justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Basic Report</h1>
+                    </div>
+                    <div class="flex items-center mt-9 lg:justify-start justify-center"><img
+                            src="/build/assests/img/dot.png" alt="">
+                        <h1 class="text-gray-500 text-lg font-semibold">Email Report</h1>
+                    </div>
+                    <div class="flex justify-center md:justify-center lg:justify-start  my-3">
+                        <button
+                            class="w-[210px] mt-3 gap-2  justify-center rounded-full font-semibold  flex items-center border-[1px] border-gray-600  p-1 h-[50px] text-black ">Select
+                            Basic Plane<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    class="w-[22px]" src="/build/assests/img/pencil.png" alt=""></span> </button>
+                    </div>
+                </div>
+                <!-- right area  -->
+                <div class="flex justify-center">
+                    <img class="w-[400px]" src="/build/assests/img/both-dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- what we care the most  -->
+
+    <section>
+        <div class="p-11">
+
+            <div class="border-2 lg:grid lg:grid-cols-3 rounded-3xl mt-14  lg:border-gray-400">
+                <!-- card 1  -->
+                <div class="  lg:p-2  border-r-2 lg:border-gray-400 ">
+                    <div class="md:flex md:justify-center lg:h-[60vh] lg:mt-10 lg:items-center">
+                        <img class="" src="/build/assests/img/paws-footer.png" alt="">
+                    </div>
+                    <div
+                        class="uppercase  text-center lg:text-start 2xl:translate-y-[120px] mb-4 mt-24 lg:mt-[260px] lg:translate-y-[200px]">
+                        <h1 class="text-3xl md:text-4xl 2xl:tracking-widest  lg:text-5xl 2xl:text-[88px] ">What WE Care
+                            the <span class="text-[#EA305A] ">most</span></h1>
+                    </div>
+
+                </div>
+                <!-- card 2  -->
+                <div class="  mt-20 lg:mt-0  border-r-2 lg:border-gray-400">
+                    <div class="border-b-2 lg:border-gray-400 lg:flex lg:items-center  lg:h-[87vh]">
+                        <p class="leading-10 md:text-center lg:text-[13px] 2xl:text-xl">Never miss a moment never miss a
+                            moment
+                            never miss
+                            never miss a moment never miss a moment never miss
+                            never miss a moment never miss a moment never miss
+                            never miss a moment never miss a moment never a
+                        </p>
+                    </div>
+                    <div class=" mt-24 lg:ml-2 lg:mt-9 flex justify-center ">
+                        <img class="" src="/build/assests/img/CAT IMG-yelo.png" alt="">
+                    </div>
+
+                </div>
+                <!-- card 3  -->
+
+                <div class=" mt-20 ">
+                    <div class="md:flex justify-center xl:p-4 lg:h-[]">
+                        <img class="md:w-[450px] 2xl:w-[555px] 2xl:h-[530px]" src="/build/assests/img/red-dogs.png"
+                            alt="">
+                    </div>
+                    <div class="2xl:pt-[120px] mt-24 xl:mt-9 xl:justify-center xl:text-center flex justify-center ">
+                        <h1 class="uppercase font-bold text-2xl md:text-xl 2xl:text-3xl">never miss a moment ..!!</h1>
+                    </div>
+                    <div class="mt-24 2xl:pb-[0px] lg:mb-12 xl:flex xl:justify-center  md:mt-9 text-center ">
+                        <h1
+                            class="uppercase xl:text-center 2xl:text-3xl text-xl md:text-xl xl:w-[380px] 2xl:w-[470px] text-[#F59BB0]">
+                            TRYSTED BY 10,000 PET OWNERS
+                            WORLDWIDE</h1>
+                    </div>
+                    <div
+                        class="flex justify-center md:mt-4 2xl:m-# lg:border-t-2 lg:py-14  lg:border-gray-400 2xl:mb-2">
+                        <button
+                            class="w-[240px] mt-3  lg:mt-16 gap-2 lg:mb-4 lg:translate-y-14 xl:translate-y-16 justify-center rounded-full font-semibold  flex items-center border-[1px] border-gray-600 bg-white  p-1 h-[50px] text-black ">See
+                            Our Collection<span class="font-semibold">|</span> <span class="mx- flex items-center"><img
+                                    class="w-[22px]" src="/build/assests/img/black paw.png" alt=""></span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lets connect section  -->
+
+    <section>
+        <div class="relative mt-16">
+            <div class=" flex justify-end overflow-hidden">
+                <img class="w-[150px] md:w-[190px] lg:w-[210px] xl:w-[300px]" src="/build/assests/img/foot-paw-1.png"
+                    alt="">
+            </div>
+
+            <div class="flex justify-center xl:translate-y-[-210px]">
+                <h1 class="text-2xl 2xl:text-6xl 2xl:tracking-widest md:text-3xl lg:text-4xl">LET,S <span
+                        class="text-[#F0718D]">CONNECT</span></h1>
+            </div>
+            <!-- search  -->
+            <div class="p-2 xl:translate-y-[-180px] ">
+                <div class="md:flex justify-center">
+                    <div class="p-2">
+                        <div
+                            class="search-container md:w-[330px] lg:w-[400px] xl:w-[500px]  border-2 p-2 rounded-full  border-gray-600">
+                            <input type="text" class="search-box text-black" placeholder="Search...">
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <div
+                            class="search-container border-2 p-2 md:w-[330px] lg:w-[400px] xl:w-[500px] rounded-full  border-gray-600">
+                            <input type="text" class="search-box text-black" placeholder="Email...">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex 2xl:px-[247px] lg:ml-20 md:ml-10 xl:ml-28">
+                    <div class="p-2 flex  md:flex md:gap-6">
+                        <div
+                            class="search-container border-2 p-2 xl:ml-20 xl:w-[666px] md:w-[400px] lg:w-[500px] rounded-full  border-gray-600">
+                            <input type="text" class="search-box text-black" placeholder="Your Message...">
+                        </div>
+                        <div class="">
+                            <button
+                                class="bg-[#EA305A] w-[100px] p-3 gap-2 text-white font-bold flex items-center rounded-full">SEND
+                                <img class="w-[22px] " src="/build/assests/img/send.png" alt=""></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" flex xl:translate-y-[-230px] overflow-hidden">
+                <img class="w-[150px] md:w-[190px] lg:w-[210px] xl:w-[300px] " src="/build/assests/img/foot-paw-2.png"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#333333]">
+        <div class="p-3 md:flex justify-around xl:gap-14">
+            <div class="flex mt-12 md:mt-5 items-center justify-center text-white">
+                <h1 class="text-sm uppercase">TERM OR CONDITION</h1>
+                <h1 class="text-sm uppercase">privacy policy</h1>
+            </div>
+            <div class="flex mt-12 md:mt-5 items-center justify-center text-white">
+                <img class="w-[180px] lg:w-[210px]" src="/build/assests/img/footerlogo.png" alt="">
+            </div>
+            <div class="flex mt-12 md:mt-5 items-center justify-center text-white">
+                <h1 class="text-sm">COPYWRIGHTtptthinkpet</h1>
+            </div>
+
+
+
+
+
+        </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <script>
+        function startCounter(id, target, suffix = "+") {
+            let count = 0;
+            const speed = 20;
+            const stepSize = Math.ceil(target / 100);
+            const el = document.getElementById(id);
+
+            const step = () => {
+                count += stepSize;
+                if (count < target) {
+                    el.textContent = count.toLocaleString() + suffix;
+                    setTimeout(step, speed);
+                } else {
+                    el.textContent = target.toLocaleString() + suffix;
+                }
+            };
+
+            step();
+        }
+
+        window.onload = () => {
+            startCounter("counter1", 10000, "+");
+            startCounter("counter2", 5000, "+");
+            startCounter("counter3", 95, "%");
+        };
+    </script>
+</body>
+
+</html>
